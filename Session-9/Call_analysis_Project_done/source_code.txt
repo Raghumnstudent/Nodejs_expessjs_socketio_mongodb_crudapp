@@ -1,0 +1,11 @@
+*mongoimport call_data.json -d test -c calldata --drop --jsonArray
+
+*db.calldata.insert({source:"+919686303213",destination:"+9196867453032",source_location:"Mandya",destination_location:"Mandya",call_duration:25,roaming:"true",call_charge:13})
+
+*> db.calldata.find({roaming:"true"}).count()
+144
+*> db.calldata.find({call_duration:{$gt:10}}).count()
+213
+
+*>db.calldata.find({$and:[{roaming:"true"},{call_duration:{$gt:10}}]}).count()
+72

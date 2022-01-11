@@ -1,0 +1,20 @@
+https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY
+
+const superagent= require('superagent'); 
+superagent.get('https://jsonplaceholder.typicode.com/users') 
+.query({'email':'Sincere@april.biz'}) 
+.end((err,res)=>{ if(err){ return console.log(err); } console.log(res.body); })
+
+
+
+Dark sky by apple to view map, now it is not allowing to create account
+
+
+
+
+
+go to lms
+1.6 assisted practice: Nodejs Http---> here you take links for geocoding.js file
+
+
+done --> today class need to go through from weatherappusingcallback

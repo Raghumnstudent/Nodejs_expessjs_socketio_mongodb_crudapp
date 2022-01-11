@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "axios": "^0.24.0",
+    "http": "^0.0.1-security",
+    "https": "^1.0.0",
+    "request": "^2.88.2",
+    "require": "^2.4.20",
+    "superagent": "^6.1.0",
+    "util": "^0.12.4"
+  }
+}

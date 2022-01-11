@@ -1,0 +1,18 @@
+In the session-6 
+
+she explained about the mongodb theory till mongodb setup 
+and done the mongodb setup(mongo shell) in system
+
+
+*To use the mongodb 
+1)for first time go to edit environmental variables for your account
+variabl
+2)click on new, type path in variable, paste this path
+C:\Program Files\MongoDB\Server\4.4\bin click ok
+3)open cmd type mongo
+it will show version and connected to server 
+now you are using mpngodb
+
+
+
+

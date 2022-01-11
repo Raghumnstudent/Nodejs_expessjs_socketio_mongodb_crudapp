@@ -1,0 +1,12 @@
+*open node cmd
+
+*type cd C:\Users\Raghu M N\OneDrive - ZeOmega\Web_development_files\Phase_3\Session-12\CRUDAPP
+
+*type npm install --->module files are ignored we need to install again
+that are stored in package.json file
+
+*open package.json,add start:"nodemon index.js" save it
+
+*go to cmd type node start
+
+*nodemon aotumaticall run code when edit code and save it

@@ -1,0 +1,46 @@
+rscongf = {_id:"replica1", members:[{_id:0,host:"localhost:27018",tags:{"dc":"east","use":"production"}}]}
+rs.initiate(rsconf)
+rs.status()
+
+
+{ "_id":"rs0", "version":1; members:[ { "_id":0, "host":"localhost:27018", "arbiterOnly":false; "buildIndexes":true, hidden:false; priority:1; tags:{} } ] }
+
+
+
+
+1) replicaStatus 
+cmd1--->C:\Users\nraghu>mongod --port 27018 --dbpath "C:\Users\nraghu\OneDrive - ZeOmega\Web_development_files\Phase_3\session11\replicat_Status\data1" --replSet rs0
+cmd2--->C:\Users\nraghu>mongod --port 27019 --dbpath "C:\Users\nraghu\OneDrive - ZeOmega\Web_development_files\Phase_3\session11\replicat_Status\data2" --replSet rs0
+
+cmd3--->mongo --port 27018
+rsconf = {_id:"rs0",members:[{_id:0,host:"localhost:27018"},{_id:1,host:"localhost:27019"}]}
+rs.initiate(rsconf)
+rs.status()
+rs.printReplicationInfo()
+rs.printSecondaryReplicationInfo()
+rs.printSlaveReplicationInfo()
+db.isMaster()
+
+
+
+2) shard cluster 
+
+cmd1---->mongod --configsvr --replSet --dbpath "C:\Users\nraghu\OneDrive - ZeOmega\Web_development_files\Phase_3\session11\Shard_cluster\configdb1" --port 27010
+cmd2 ---->mongod --configsvr --replSet --dbpath "C:\Users\nraghu\OneDrive - ZeOmega\Web_development_files\Phase_3\session11\Shard_cluster\configdb2" --port 27011
+
+cmd3--->open cmd mongo --port 27010
+
+rs.initiate({_id:"rs1",members:[{_id:0,host:"localhost:27010"},{_id:1,host:"localhost:27011"}]})
+
+open new cmd
+cmd4------>mongos --configdb "rs1"/localhost:27010 --port 27010
+
+go to cmd3 then execute following command 
+sh.status()
+
+use mydata    --> creating the database
+db.details.insert({name:"Ravi M N"})
+
+sh.enableSharding("mydata") -->enabling the database for sharding
+
+mam we created two shading after we connected to server, then we are viewing the shading info

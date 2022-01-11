@@ -1,0 +1,15 @@
+*created the database called test
+then created the collection called calldata
+
+*imported the call_data.json into 
+test database calldata collection
+
+mongoimport call_data.json -d test -c calldata --drop --jsonArray
+
+*inserted the new document into calldata
+
+*counted the number of documents
+which have roaming is true 
+
+*counted the number of documents 
+which have call_duration greater than 10 minutes

@@ -1,0 +1,5 @@
+1.Importing the employee_data.json file into the mongo database.
+2.Calculating the number of employees who failed in term1 using the count query.
+3.Calculating the average of the employee of the term1 using the average query.
+4.Calculating the count of the employees who have passed all term1,term2 and term3 using the and query.
+5.Calculating the average of each employee using the project query.

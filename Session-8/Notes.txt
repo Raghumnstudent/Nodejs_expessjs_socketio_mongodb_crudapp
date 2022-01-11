@@ -1,0 +1,9 @@
+In the session-8
+
+started from theory part Relationships in mongodb to till end
+
+
+today we executed so many quries, 
+some queries are availabe in operatin doc file in this folder
+
+all theory and query commands are available in pdf at the end

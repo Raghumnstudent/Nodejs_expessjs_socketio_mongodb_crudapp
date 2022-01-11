@@ -1,0 +1,35 @@
+In session-7
+
+1)she explained the theory part from scalling to Memory management then
+
+
+2)Mongodb is set of multiple database,database is set of collection, 
+single collection contain the multiple documents
+
+3)then we installed the mongodb compass 
+mongodb compass is application to creating the database in mongodb
+like Pycharm for Python coding
+we can create the database, collection, documents easily in mongodb compass
+
+4)downdoad the mongodb database tools zip file from mongodb website
+unzip it
+go to bin folder
+copy the all files from ---> C:\Users\Raghu M N\Documents\mongodb-database-tools-windows-x86_64-100.5.1\mongodb-database-tools-windows-x86_64-100.5.1\bin
+paste into this path ---> C:\Program Files\MongoDB\Server\4.4\bin
+
+5)for first time go to edit environmental variables for your account
+variabl
+click on new, type path in variable, paste this path
+C:\Program Files\MongoDB\Server\4.4\bin click ok
+Repeat this  path have to update because we pasted some other files
+
+Now we use can use the some other functions like mongodump
+
+
+we created the database in mongodb using mongo shell,
+then we created the collection inside the database,
+inserted the documents to collection 
+
+
+all commands and example is there in this session-7 folder
+file names --->Mongo DB Document DB, Transaction_Example_in_mongo

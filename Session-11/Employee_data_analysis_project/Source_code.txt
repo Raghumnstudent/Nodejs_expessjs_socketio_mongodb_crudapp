@@ -1,0 +1,17 @@
+*execute the following commands
+
+cd path of folder where you stored json file
+
+mongoimport filename.json -d Employeedata -c details --drop --jsonArray
+
+show dbs
+
+use Employeedata
+
+db.details.find({term1:{$lt:37}}).count()
+
+db.details.aggegate($group:{"_id":"_id",avgvalue:{$avg:"term1"}})
+
+db.details.aggregate({$and:[{term1:{$gte:37}},{term2:{$gte:37}},{term3:{$gte:37}}]}).count()
+
+db.details.aggregate([{$project:{avgvalue:{$avg:["$term1","$term2","$term3"]}}}])

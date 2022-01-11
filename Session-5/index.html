@@ -1,0 +1,12 @@
+<!-- Adding the socket.io file to use socket.io in our script\
+it is built_in module -->
+<script src="/socket.io/socket.io.js"></script> 
+
+<script> 
+var socket=io(); 
+     //receiving the message from server
+    socket.on('server message',(data)=>{ console.log(data.hello); 
+    //send client message to server 
+    socket.emit('client message',{my:'I am client, sending the data to server'}) 
+}) 
+</script>
